@@ -61,8 +61,9 @@ namespace SpinningDiscs
         {
             foreach (string item in DiscData)
             {
-                Console.WriteLine(item);
+                Console.Write($"{item} ");
             }
+            Console.WriteLine("\n");
         }
 
         public override bool Equals(object obj)
