@@ -12,12 +12,7 @@ namespace SpinningDiscs
 
         }
         // TODO: Implement your custom interface.
-        //public void SpinDisc()
-        //{
-        //    Console.WriteLine($"A {type} spins at a rate of {DiscMinSpeed} - {DiscMaxSpeed} rpm.");
-        //}
-
-       
+              
         // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
         //  need to be declared separately.
     }
