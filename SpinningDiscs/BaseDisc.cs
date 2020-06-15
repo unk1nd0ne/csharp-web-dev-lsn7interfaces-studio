@@ -12,8 +12,8 @@ namespace SpinningDiscs
         private string DiscType;
         private int DiscMinSpeed;
         private int DiscMaxSpeed;
-        private double DiscCapacity;
-        private double DiscFreeSpace;
+        private int DiscCapacity;
+        private int DiscFreeSpace;
         private List<string> DiscData = new List<string>();
         private bool DiscOpen = true;
         
@@ -24,7 +24,7 @@ namespace SpinningDiscs
             nextId++;
         }
 
-        public BaseDisc (string discLabel, string discType, int discMinSpeed, int discMaxSpeed, double discCapacity) : this()
+        public BaseDisc (string discLabel, string discType, int discMinSpeed, int discMaxSpeed, int discCapacity) : this()
         {
             DiscLabel = discLabel;
             DiscType = discType;

@@ -3,7 +3,11 @@ namespace SpinningDiscs
 {
     public class DVD : BaseDisc, IOpticalDisc
     {
-        public DVD (string discLabel) : base(discLabel, "DVD", 570, 1600, 47000)
+        private const string discType = "DVD";
+        private const int discMinSpeed = 570;
+        private const int discMaxSpeed = 1600;
+        private const int discCapacity = 47000;
+        public DVD (string discLabel) : base(discLabel, discType, discMinSpeed, discMaxSpeed, discCapacity)
         {
 
         }
