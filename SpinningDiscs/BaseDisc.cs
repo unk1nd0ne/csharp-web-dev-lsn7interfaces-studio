@@ -32,6 +32,8 @@ namespace SpinningDiscs
             DiscMaxSpeed = discMaxSpeed;
             DiscCapacity = discCapacity;
             DiscFreeSpace = discCapacity;
+
+            ToString();
         }
 
         public void SpinDisc()
@@ -44,7 +46,7 @@ namespace SpinningDiscs
             if (DiscOpen)
             {
                 DiscData.Add(toWrite);
-                DiscFreeSpace--;
+                DiscFreeSpace -= toWrite.Length;
                 if (DiscFreeSpace == 0)
                 {
                     DiscOpen = false;
